@@ -1,0 +1,31 @@
+body {
+    background: #222;
+    margin: 0;
+}
+h3 {
+    color: #BBB;
+}
+.gallery {
+    text-align: center;
+}
+.thumbnails img {
+    height: 80px;
+    border: 2px solid #555;
+    padding: 1px;
+    margin: 0 10px 5px 0;
+}
+
+.thumbnails img:hover {
+    border: 2px solid #00ccff;
+    cursor:pointer;
+}
+
+.preview {
+    text-align: center;
+}
+
+.preview img {
+    border: 2px solid #444;
+    padding: 1px;
+    width: 600px;
+}

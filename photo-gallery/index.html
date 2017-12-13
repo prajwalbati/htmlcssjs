@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Photo Gallery with HTML and JavaScript</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="gallery">
+        <h3>Simple HTML Photo Gallery with JavaScript</h3>
+        <div class="thumbnails">
+            <img onmouseover="updatePreview(this)" id="img1" src="images/img1.jpg" alt="" />
+            <img onmouseover="updatePreview(this)" id="img2" src="images/img2.jpg" alt="" />
+            <img onmouseover="updatePreview(this)" id="img3" src="images/img3.jpg" alt="" />
+            <img onmouseover="updatePreview(this)" id="img4" src="images/img4.jpg" alt="" />
+            <img onmouseover="updatePreview(this)" id="img5" src="images/img5.jpg" alt="" />
+            <img onmouseover="updatePreview(this)" id="img6" src="images/img6.jpg" alt="" />
+        </div>
+
+        <div class="preview">
+            <img id="preview" src="images/img1.jpg" alt=""/>
+        </div>
+    </div>
+    <script type="text/javascript">
+        function updatePreview(element) {
+            document.getElementById('preview').src = element.src;
+        }
+    </script>
+</body>
+</html>

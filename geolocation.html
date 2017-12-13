@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Find your location</title>
+    </head>
+    <body>
+        <div id="currentLocation">
+            Loading your current location...
+        </div>
+
+        <script>
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function(position) {
+                    document.getElementById("currentLocation").innerHTML = "Your current location is:<br> Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude;
+                });
+            }
+        </script>
+    </body>
+</html>
